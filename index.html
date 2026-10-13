@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillTrack360 helps track employment outcomes, career growth, retention, and skill gaps after training." />
+  <meta name="theme-color" content="#f7fbf9" />
+  <title>SkillTrack360 — Tracking Careers Beyond Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="SkillTrack360 home">
+        <span class="brand-mark"><i data-lucide="orbit"></i></span>
+        <span>SkillTrack<span class="brand-accent">360</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#platform">Platform</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#providers">For providers</a>
+        <a href="#impact">Impact</a>
+        <a class="nav-signin" href="#dashboard">Sign in</a>
+        <a class="button button-small" href="#dashboard">Explore dashboard <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> SKILLING OUTCOME INTELLIGENCE</div>
+        <h1>Track careers.<br><span class="text-gradient">Improve outcomes.</span></h1>
+        <p class="hero-description">Go beyond training completion. Follow employment, retention, career growth, and skill gaps — all in one consent-based platform.</p>
+        <div class="hero-actions">
+          <a class="button" href="#dashboard">Explore the platform <i data-lucide="arrow-right"></i></a>
+          <a class="button button-secondary" href="#how-it-works"><i data-lucide="play-circle"></i> See how it works</a>
+        </div>
+        <div class="hero-trust">
+          <span class="trust-icon"><i data-lucide="shield-check"></i></span>
+          <span>Built for trainees, training providers, employers<br class="desktop-break"> and programme leaders</span>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-avatars" aria-hidden="true"><span>T</span><span>P</span><span>E</span><span>+</span></div>
+          <p><strong>One connected journey</strong><br><span>From learning to lasting employment</span></p>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="dashboard">
+        <div class="visual-orb orb-one"></div><div class="visual-orb orb-two"></div>
+        <div class="dashboard-card">
+          <div class="dash-header">
+            <div><p class="dash-kicker">OVERVIEW / COHORT 08</p><h2>Cohort outcomes</h2></div>
+            <button class="icon-button" aria-label="Dashboard options"><i data-lucide="ellipsis"></i></button>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <div class="metric-top"><span>Employment</span><span class="metric-icon green"><i data-lucide="briefcase-business"></i></span></div>
+              <div class="metric-value">68<span>%</span></div><div class="metric-note"><span class="trend"><i data-lucide="trending-up"></i> +8.4%</span> vs. previous cohort</div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-top"><span>6-month retention</span><span class="metric-icon blue"><i data-lucide="calendar-check"></i></span></div>
+              <div class="metric-value">82<span>%</span></div><div class="metric-note"><span class="trend"><i data-lucide="trending-up"></i> +5.2%</span> vs. previous cohort</div>
+            </article>
+          </div>
+          <div class="chart-panel">
+            <div class="chart-heading"><div><h3>Career progress</h3><p>Employment across follow-up periods</p></div><span class="chart-legend"><span></span> Employed</span></div>
+            <div class="chart-wrap">
+              <div class="chart-y-labels"><span>80%</span><span>60%</span><span>40%</span><span>20%</span></div>
+              <svg class="line-chart" viewBox="0 0 420 150" role="img" aria-label="Illustrative employment trend increasing from 42 percent at 30 days to 68 percent at 12 months">
+                <defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#20b486" stop-opacity=".22"/><stop offset="100%" stop-color="#20b486" stop-opacity="0"/></linearGradient></defs>
+                <path d="M10 115 C48 108 55 96 88 98 S140 82 168 87 S222 60 250 68 S303 42 330 48 S385 25 410 20 L410 145 L10 145 Z" fill="url(#chartFill)"/>
+                <path d="M10 115 C48 108 55 96 88 98 S140 82 168 87 S222 60 250 68 S303 42 330 48 S385 25 410 20" fill="none" stroke="#159b75" stroke-width="3.5" stroke-linecap="round"/>
+                <g fill="#fff" stroke="#159b75" stroke-width="3"><circle cx="10" cy="115" r="4"/><circle cx="88" cy="98" r="4"/><circle cx="168" cy="87" r="4"/><circle cx="250" cy="68" r="4"/><circle cx="330" cy="48" r="4"/><circle cx="410" cy="20" r="4"/></g>
+              </svg>
+            </div>
+            <div class="chart-x-labels"><span>30 days</span><span>3 months</span><span>6 months</span><span>12 months</span></div>
+          </div>
+          <div class="dash-bottom">
+            <div class="verification-card">
+              <div class="bottom-heading"><h3>Outcome evidence</h3><span class="subtle-label">STATUS</span></div>
+              <div class="evidence-row"><span class="evidence-dot confirmed"></span><span>Employer confirmed</span><strong>24%</strong></div>
+              <div class="evidence-row"><span class="evidence-dot supported"></span><span>Document supported</span><strong>30%</strong></div>
+              <div class="evidence-row"><span class="evidence-dot reported"></span><span>Self-reported</span><strong>46%</strong></div>
+            </div>
+            <div class="score-card">
+              <div class="bottom-heading"><h3>Skill readiness</h3><i data-lucide="sparkles"></i></div>
+              <div class="score-ring"><div><strong>74</strong><span>/100</span></div></div>
+              <p>Opportunity to improve</p>
+              <span class="score-tag">3 skills to focus on</span>
+            </div>
+          </div>
+          <div class="dash-foot"><span><i data-lucide="lock-keyhole"></i> Privacy-first reporting</span><span class="live-dot"></span><span>Illustrative demo data</span></div>
+        </div>
+        <div class="floating-note"><span class="float-icon"><i data-lucide="target"></i></span><div><strong>Skills gap detected</strong><span>Communication · Digital tools</span></div><i data-lucide="arrow-up-right" class="float-arrow"></i></div>
+      </div>
+    </section>
+
+    <section class="milestone-band">
+      <div class="container milestone-inner">
+        <div class="milestone-intro"><span class="milestone-icon"><i data-lucide="route"></i></span><div><strong>Every milestone matters</strong><span>Keep the career journey in view</span></div></div>
+        <div class="milestone"><span class="milestone-number">01</span><span>30 days</span></div>
+        <div class="milestone"><span class="milestone-number">02</span><span>3 months</span></div>
+        <div class="milestone"><span class="milestone-number">03</span><span>6 months</span></div>
+        <div class="milestone"><span class="milestone-number">04</span><span>12 months</span></div>
+      </div>
+    </section>
+
+    <section class="section problem-section container" id="platform">
+      <div class="section-heading">
+        <span class="eyebrow">THE MISSING LINK</span>
+        <h2>The real impact starts<br> <span class="text-gradient">after training.</span></h2>
+        <p>Course completion is a milestone. A career is the outcome. SkillTrack360 connects the two with structured follow-ups and actionable insights.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon feature-green"><i data-lucide="git-branch"></i></span>
+          <span class="feature-number">01 / TRACK</span>
+          <h3>Track every journey</h3>
+          <p>Follow employment status, job roles, retention, and career progression at 30 days, 3, 6, and 12 months.</p>
+          <a href="#how-it-works" class="text-link">Explore journey tracking <i data-lucide="arrow-up-right"></i></a>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon feature-blue"><i data-lucide="badge-check"></i></span>
+          <span class="feature-number">02 / VERIFY</span>
+          <h3>Know what to trust</h3>
+          <p>Distinguish self-reported updates from document-supported and employer-confirmed outcomes.</p>
+          <a href="#how-it-works" class="text-link">See evidence levels <i data-lucide="arrow-up-right"></i></a>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon feature-violet"><i data-lucide="scan-search"></i></span>
+          <span class="feature-number">03 / IMPROVE</span>
+          <h3>Turn gaps into action</h3>
+          <p>Spot recurring skill gaps and retention challenges to help providers improve future training cohorts.</p>
+          <a href="#providers" class="text-link">Discover insights <i data-lucide="arrow-up-right"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section workflow-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">HOW IT WORKS</span>
+          <h2>A continuous loop.<br><span class="text-gradient">Measurable progress.</span></h2>
+          <p>From consented updates to practical insights — every step helps make skilling more outcome-focused.</p>
+        </div>
+        <div class="workflow">
+          <article class="workflow-step"><span class="step-icon"><i data-lucide="user-check"></i></span><span class="step-count">STEP 01</span><h3>Collect with consent</h3><p>Record training, skills, and contact preferences.</p></article>
+          <span class="workflow-arrow"><i data-lucide="arrow-right"></i></span>
+          <article class="workflow-step"><span class="step-icon"><i data-lucide="messages-square"></i></span><span class="step-count">STEP 02</span><h3>Follow up</h3><p>Invite trainees to share career updates at key milestones.</p></article>
+          <span class="workflow-arrow"><i data-lucide="arrow-right"></i></span>
+          <article class="workflow-step"><span class="step-icon"><i data-lucide="shield-check"></i></span><span class="step-count">STEP 03</span><h3>Review evidence</h3><p>Label outcome confidence without hiding missing data.</p></article>
+          <span class="workflow-arrow"><i data-lucide="arrow-right"></i></span>
+          <article class="workflow-step"><span class="step-icon"><i data-lucide="chart-no-axes-combined"></i></span><span class="step-count">STEP 04</span><h3>Improve training</h3><p>Turn cohort patterns into targeted improvement actions.</p></article>
+        </div>
+        <div class="feedback-loop"><i data-lucide="refresh-cw"></i><span><strong>Track → Verify → Analyse → Improve → Measure again</strong> — a feedback loop built around career outcomes.</span></div>
+      </div>
+    </section>
+
+    <section class="section provider-section container" id="providers">
+      <div class="provider-copy">
+        <span class="eyebrow">BUILT FOR ACTION</span>
+        <h2>Better visibility for<br><span class="text-gradient">every stakeholder.</span></h2>
+        <p>Role-based views help people focus on what they can improve, while sensitive trainee information stays access-controlled.</p>
+        <ul class="check-list">
+          <li><i data-lucide="check-circle-2"></i><span><strong>Trainees</strong> — share updates and view career progress.</span></li>
+          <li><i data-lucide="check-circle-2"></i><span><strong>Training providers</strong> — monitor cohorts and skill gaps.</span></li>
+          <li><i data-lucide="check-circle-2"></i><span><strong>Employers</strong> — confirm information with permission.</span></li>
+          <li><i data-lucide="check-circle-2"></i><span><strong>Programme leaders</strong> — review authorised aggregate trends.</span></li>
+        </ul>
+        <a class="button" href="#impact">Explore the impact <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="insight-panel">
+        <div class="insight-header"><div><span class="dash-kicker">PROVIDER INSIGHTS</span><h3>Where can we improve?</h3></div><span class="insight-badge"><i data-lucide="activity"></i> Sample cohort</span></div>
+        <div class="insight-stat-row"><div><span>Follow-up response</span><strong>76%</strong></div><div class="mini-progress"><span style="width:76%"></span></div></div>
+        <div class="insight-stat-row"><div><span>Employment retention</span><strong>82%</strong></div><div class="mini-progress"><span style="width:82%"></span></div></div>
+        <div class="insight-stat-row"><div><span>Evidence reviewed</span><strong>54%</strong></div><div class="mini-progress"><span style="width:54%"></span></div></div>
+        <div class="gap-box"><div class="gap-box-icon"><i data-lucide="lightbulb"></i></div><div><strong>Recurring skill gap</strong><p>Digital tools and workplace communication appear frequently in trainee feedback.</p><span>Suggested action: review module coverage</span></div></div>
+        <p class="data-note"><i data-lucide="info"></i> Illustrative metrics for prototype demonstration, not real programme results.</p>
+      </div>
+    </section>
+
+    <section class="section impact-section" id="impact">
+      <div class="container impact-inner">
+        <div class="impact-copy"><span class="eyebrow">THE OUTCOME ADVANTAGE</span><h2>Measure what happens<br><span class="text-gradient">next.</span></h2><p>Make post-training outcomes visible, understand where support is needed, and use evidence to shape better skilling programmes.</p></div>
+        <div class="impact-points">
+          <div><span class="impact-point-icon"><i data-lucide="briefcase"></i></span><p><strong>Employment visibility</strong><span>Understand outcomes beyond course completion.</span></p></div>
+          <div><span class="impact-point-icon"><i data-lucide="trending-up"></i></span><p><strong>Career progression</strong><span>Track retention, role changes, and salary bands.</span></p></div>
+          <div><span class="impact-point-icon"><i data-lucide="graduation-cap"></i></span><p><strong>Training improvement</strong><span>Connect recurring gaps to practical programme changes.</span></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section container">
+      <div class="cta-card">
+        <div class="cta-decoration cta-decoration-one"></div><div class="cta-decoration cta-decoration-two"></div>
+        <div class="cta-content"><span class="eyebrow eyebrow-light">SKILLTRACK360</span><h2>Training is the beginning.<br>Let’s track what comes next.</h2><p>Build a clearer picture of career outcomes — one follow-up at a time.</p></div>
+        <a class="button button-white" href="#home">Back to top <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <a class="brand" href="#home"><span class="brand-mark"><i data-lucide="orbit"></i></span><span>SkillTrack<span class="brand-accent">360</span></span></a>
+      <p>Tracking careers beyond training.</p>
+      <div class="footer-links"><a href="#platform">Platform</a><a href="#how-it-works">How it works</a><a href="#impact">Impact</a></div>
+    </div>
+    <div class="container footer-bottom"><span>Problem Statement ID: 26135 · Theme: Miscellaneous</span><span>Prototype concept · Sample dashboard data is illustrative</span></div>
+  </footer>
+</body>
+</html>
